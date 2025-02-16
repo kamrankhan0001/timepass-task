@@ -1,0 +1,100 @@
+.step4-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.step4-container h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.summary-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.plan-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan-summary h3 {
+    margin: 0;
+    color: #333;
+}
+
+.change-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.add-on-summary {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.add-on-summary p {
+    margin: 0;
+    color: #666;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f6ff;
+    border-radius: 10px;
+}
+
+.total p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.back-button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+

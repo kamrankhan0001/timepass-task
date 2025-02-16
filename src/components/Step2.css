@@ -1,0 +1,143 @@
+.step2-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.step2-container h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.plan-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.plan-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.plan-card:hover {
+    border-color: #007bff;
+    box-shadow: 0 2px 10px rgba(0, 123, 255, 0.2);
+}
+
+.plan-card h3 {
+    margin: 0;
+    color: #333;
+}
+
+.plan-card p {
+    margin: 0;
+    color: #666;
+}
+
+.billing-options {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #eef5ff;
+    border-radius: 10px;
+}
+
+.billing-options label {
+    margin: 0 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.billing-options input {
+    margin-right: 5px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.back-button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #bbb;
+}
+
+.next-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 375px) {
+    .step2-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .plan-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan-card {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .billing-options {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .billing-options label {
+        margin: 5px 0;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .back-button,
+    .next-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .next-button {
+        margin-bottom: 0;
+    }
+}

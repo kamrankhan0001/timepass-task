@@ -1,0 +1,42 @@
+.thank-you-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 120px;
+    text-align: center;
+    background-color: white;
+}
+
+.thank-you-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.message {
+    color: #666;
+    line-height: 1.6;
+}
+
+.message a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.message a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 375px) {
+    .thank-you-container {
+        max-width: 90%;
+        padding: 60px;  /* Reduce padding for smaller screens */
+    }
+
+    .thank-you-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .message {
+        font-size: 0.95rem;
+    }
+}

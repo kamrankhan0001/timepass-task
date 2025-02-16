@@ -1,38 +1,131 @@
 .App {
-  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.plan-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.plan-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+}
+
+.billing-options {
+  margin: 20px 0;
+}
+
+.billing-options label {
+  margin-right: 20px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigation button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigation button:first-child {
+  background-color: #ccc;
+}
+
+.navigation button:last-child {
+  background-color: #007bff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+/* App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f6ff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.sidebar {
+  position: relative;
+  width: 274px;
+  border-radius: 15px 0 0 15px;
+}
+
+.step-indicators {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.step-indicator {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+
+.step-indicator span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.step-indicator.active span {
+  background-color: #bfe2ff;
+  color: #483eff;
+  border-color: #bfe2ff;
+}
+
+.step-indicator p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.step-indicator p:first-child {
+  color: #bfe2ff;
+  font-weight: bold;
+}
+
+.step-indicator p:last-child {
+  color: white;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+  background-color: white;
 }
