@@ -1,42 +1,95 @@
 .thank-you-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 120px;
     text-align: center;
-    background-color: white;
+    max-width: 450px;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
 }
 
-.thank-you-container h2 {
-    color: #333;
-    margin-bottom: 20px;
+.icon-container {
+    background-color: #f4f4f4;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
 }
 
-.message {
+.check-icon {
+    width: 40px;
+    height: 40px;
+}
+
+h2 {
+    color: #222;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
     color: #666;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 10px;
 }
 
-.message a {
-    color: #007bff;
-    text-decoration: none;
+strong {
+    color: #333;
 }
 
-.message a:hover {
-    text-decoration: underline;
-}
 
+@media (max-width: 768px) {
+    .thank-you-container {
+        max-width: 90%;
+        padding: 15px;
+        margin-top: 15%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .icon-container {
+        width: 60px;
+        height: 60px;
+    }
+
+    .check-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
 
 @media (max-width: 375px) {
     .thank-you-container {
-        max-width: 90%;
-        padding: 60px;  /* Reduce padding for smaller screens */
+        padding: 10px;
+        margin-top: 20%;
     }
 
-    .thank-you-container h2 {
-        font-size: 1.2rem;
+    h2 {
+        font-size: 18px;
     }
 
-    .message {
-        font-size: 0.95rem;
+    p {
+        font-size: 13px;
+    }
+
+    .icon-container {
+        width: 50px;
+        height: 50px;
+    }
+
+    .check-icon {
+        width: 25px;
+        height: 25px;
     }
 }

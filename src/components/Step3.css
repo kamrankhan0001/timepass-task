@@ -20,6 +20,7 @@
 .add-on {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 15px;
     padding: 15px;
     border: 1px solid #ccc;
@@ -29,10 +30,14 @@
 
 .add-on input {
     margin-right: 15px;
+    flex-shrink: 0;
 }
 
 .add-on label {
     flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .add-on h3 {
@@ -80,7 +85,7 @@
 }
 
 
-/*       Mobile views       */
+
 
 @media (max-width: 375px) {
     .step3-container {
@@ -88,13 +93,13 @@
         padding: 15px;
     }
 
-    /* Stack add-ons vertically if desired */
+   
     .add-on {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    /* Adjust checkbox margin on smaller screens */
+    
     .add-on input {
         margin-bottom: 10px;
     }
@@ -111,6 +116,6 @@
     }
 
     .next-button {
-        margin-bottom: 0; /* So only the back-button has bottom margin */
+        margin-bottom: 0; 
     }
 }

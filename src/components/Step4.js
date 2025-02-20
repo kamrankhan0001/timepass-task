@@ -2,17 +2,18 @@ import React from 'react';
 import './Step4.css';
 
 const Step4 = ({ selectedPlan, selectedAddOns, onBack, onNext }) => {
-  // Calculate the total price safely using optional chaining and fallback values
+  
   const calculateTotal = () => {
     const planPrice = parseFloat(
       (selectedPlan?.price || '$0').replace('$', '').replace('/mo', '')
     );
-    const addOnsTotal = selectedAddOns?.reduce((sum, addOn) => {
-      const price = parseFloat(
-        (addOn?.price || '$0').replace('$', '').replace('/mo', '')
-      );
-      return sum + price;
-    }, 0) || 0;
+    const addOnsTotal =
+      selectedAddOns?.reduce((sum, addOn) => {
+        const price = parseFloat(
+          (addOn?.price || '$0').replace('$', '').replace('/mo', '')
+        );
+        return sum + price;
+      }, 0) || 0;
     return planPrice + addOnsTotal;
   };
 
@@ -26,9 +27,10 @@ const Step4 = ({ selectedPlan, selectedAddOns, onBack, onNext }) => {
         <div className="plan-summary">
           <div>
             <h3>
-            {selectedPlan?.name} Arcade(Monthly)
+              {selectedPlan?.name} Arcade (Monthly)
             </h3>
-            <button className="change-button">Change</button>
+            {/* When clicking "Change", trigger onBack to go to the previous step */}
+            <button className="change-button" onClick={onBack}>Change</button>
           </div>
           <p>{selectedPlan?.price}</p>
         </div>
@@ -63,6 +65,3 @@ const Step4 = ({ selectedPlan, selectedAddOns, onBack, onNext }) => {
 };
 
 export default Step4;
-
-
-

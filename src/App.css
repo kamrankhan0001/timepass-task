@@ -1,5 +1,6 @@
 .App {
   font-family: Arial, sans-serif;
+  
   padding: 20px;
 }
 
@@ -47,7 +48,7 @@ h2 {
 }
 
 .navigation button:last-child {
-  background-color: #007bff;
+  background-color: #1E3F5A;
   color: white;
 }
 

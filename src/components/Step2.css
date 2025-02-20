@@ -21,6 +21,10 @@
 .plan-card {
     border: 1px solid #ccc;
     padding: 20px;
+    margin: 10px;
+    height: 120px;
+    
+
     border-radius: 10px;
     text-align: center;
     width: 30%;
@@ -37,6 +41,7 @@
 .plan-card h3 {
     margin: 0;
     color: #333;
+    margin-top: 20px;
 }
 
 .plan-card p {
@@ -99,10 +104,77 @@
     background-color: #0056b3;
 }
 
-/* Mobile Responsive Styles */
+
+.billing-toggle-wrapper {  
+    display: flex;  
+    justify-content: center;  
+    width: 100%;  
+}  
+
+.billing-toggle-container {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    background-color: #f4f4f4;  
+    padding: 10px;  
+    border-radius: 8px;  
+    margin: 0 auto 20px; 
+    width: 100%;  
+    max-width: 280px;  
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.billing-toggle-container span {
+    margin: 0 10px;
+    color: #666;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+.billing-toggle-container span.active {
+    color: #007bff;
+}
+
+.billing-toggle-switch {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background-color: #007bff;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.billing-toggle-switch.yearly {
+    background-color: #007bff;
+}
+
+.billing-toggle-slider {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background-color: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+}
+
+.billing-toggle-switch.yearly .billing-toggle-slider {
+    transform: translateX(25px);
+}
+
+
+
 @media (max-width: 375px) {
     .step2-container {
-        max-width: 90%;
+        max-width: 80%;
         padding: 15px;
     }
 
@@ -115,6 +187,10 @@
         width: 80%;
         margin-bottom: 15px;
     }
+    .billing-toggle-container {
+        max-width: 220px;
+        padding: 10px;
+    }
 
     .billing-options {
         flex-direction: column;
@@ -124,6 +200,7 @@
 
     .billing-options label {
         margin: 5px 0;
+        
     }
 
     .navigation {

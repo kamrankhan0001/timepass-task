@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Step1.css'; // Import the CSS file for styling
+import './Step1.css'; 
 
 const Step1 = ({ onNext }) => {
     const [name, setName] = useState('');
@@ -8,9 +8,9 @@ const Step1 = ({ onNext }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Validate inputs (optional)
+     
         if (name && email && phone) {
-            onNext({ name, email, phone }); // Pass data to the next step
+            onNext({ name, email, phone }); 
         } else {
             alert('Please fill in all fields.');
         }
